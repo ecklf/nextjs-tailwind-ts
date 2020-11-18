@@ -1,12 +1,11 @@
 module.exports = {
   purge: [],
-  darkMode: "media",
+  darkMode: "class", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      padding: { "fluid-video": "56.25%" },
+    },
   },
   variants: {},
-  plugins: [
-    require("@tailwindcss/ui"),
-    // require("@tailwindcss/typography")
-  ],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

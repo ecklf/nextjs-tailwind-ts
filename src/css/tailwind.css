@@ -2,5 +2,27 @@
 @tailwind base;
 /* purgecss end ignore */
 
+html {
+  @apply bg-white;
+}
+
+html[class*="dark"] {
+  @apply bg-black;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  @apply outline-none ring ring-red-500 dark:ring-green-500 ring-opacity-50;
+}
+
+/* This would work */
+
+/* button {
+  @apply focus:outline-none focus:ring ring-red-500 dark:ring-green-500 ring-opacity-50;
+} */
+
 @tailwind components;
 @tailwind utilities;

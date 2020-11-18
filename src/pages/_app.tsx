@@ -1,3 +1,4 @@
+import "focus-visible";
 import { AppProps } from "next/app";
 import "../css/tailwind.css";
 
